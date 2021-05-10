@@ -34,8 +34,7 @@
       "typeorm": "0.2.32"
    },
    "scripts": {
-      "start": "ts-node src/server.ts",
-      "server": "--exec ts-node src/server.ts",
-      "build": "tsc"
+      "start": "node build/server.js",
+      "tsc": "tsc"
    }
 }
