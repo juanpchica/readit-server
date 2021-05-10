@@ -34,7 +34,9 @@
       "typeorm": "0.2.32"
    },
    "scripts": {
-      "start": "node build/server.js",
-      "tsc": "tsc"
+      "build-ts": "tsc",
+      "postinstall": "npm run build-ts",
+      "start": "npm run serve",
+      "serve": "node dist/server.js"
    }
 }
