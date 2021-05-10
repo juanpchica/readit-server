@@ -1,7 +1,7 @@
 module.exports = {
   type: "postgres",
   url: process.env.DATABASE_URL,
-  synchronize: true,
+  synchronize: false,
   logging: true,
   entities: ["dist/entities/**/*.js"],
   migrations: ["dist/migrations/**/*.js"],
