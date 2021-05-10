@@ -8,18 +8,18 @@
    "synchronize": false,
    "logging": true,
    "entities": [
-      "src/entities/**/*.ts"
+      "build/entities/**/*.js"
    ],
    "migrations": [
-      "src/migrations/**/*.ts"
+      "build/migrations/**/*.js"
    ],
    "subscribers": [
-      "src/subscribers/**/*.ts"
+      "build/subscribers/**/*.js"
    ],
-   "seeds": ["src/seeds/**/*{.ts,.js}"],
+   "seeds": ["build/seeds/**/*{.ts,.js}"],
    "cli": {
-      "entitiesDir": "src/entities",
-      "migrationsDir": "src/migrations",
-      "subscribersDir": "src/subscribers"
+      "entitiesDir": "build/entities",
+      "migrationsDir": "build/migrations",
+      "subscribersDir": "build/subscribers"
    }
 }
