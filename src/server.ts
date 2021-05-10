@@ -29,7 +29,7 @@ app.use(
 );
 app.use(express.static("public"));
 
-app.get("/", (_, res) => res.send("Hello world!! port " + PORT));
+app.get("/", (_, res) => res.send("Hello world!! port " + process.env.ORIGIN));
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/subs", subRoutes);
