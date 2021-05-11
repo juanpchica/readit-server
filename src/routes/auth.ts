@@ -78,7 +78,7 @@ const login = async (req: Request, res: Response) => {
     const token = jwt.sign({ username }, process.env.JWT_TOKEN!);
 
     //Set my cookie with the token created
-    res.set(
+    res.setHeader(
       "Set-Cookie",
       cookie.serialize("token", token, {
         httpOnly: true,
